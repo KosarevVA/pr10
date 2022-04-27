@@ -1,0 +1,149 @@
+\hypertarget{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box}{}\doxysection{Online\+Compiler.\+Server.\+Sand\+Box.\+Sand\+Box Class Reference}
+\label{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box}\index{OnlineCompiler.Server.SandBox.SandBox@{OnlineCompiler.Server.SandBox.SandBox}}
+Inheritance diagram for Online\+Compiler.\+Server.\+Sand\+Box.\+Sand\+Box\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_a5c5c28f6bcbdb55a2155a72255b2fcfc}{Initialize\+Sand\+Box}} ()
+\begin{DoxyCompactList}\small\item\em Initializes main components and starts the sandbox \end{DoxyCompactList}\item 
+abstract Task \mbox{\hyperlink{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_a4e2640dffb7d6098dd54cd1ce5830fbe}{Initialize\+Sand\+Box\+Async}} ()
+\begin{DoxyCompactList}\small\item\em Asynchronously initializes main components and starts the sandbox \end{DoxyCompactList}\item 
+abstract int \mbox{\hyperlink{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_af87c4a2223fc5f73618501ad5599db91}{Execute\+Command\+In\+Sandbox}} (string command)
+\begin{DoxyCompactList}\small\item\em Executes command in sandbox \end{DoxyCompactList}\item 
+abstract Task$<$ int $>$ \mbox{\hyperlink{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_acb7eaaff1bcc6991301e920bbfb561b4}{Execute\+Command\+In\+Sandbox\+Async}} (string command)
+\begin{DoxyCompactList}\small\item\em Asynchronously executes command in sandbox \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_a8830d07d5b8372d021df2f7527fe6069}{Dispose}} ()
+\begin{DoxyCompactList}\small\item\em Shutdowns sandbox and performs cleanup \end{DoxyCompactList}\item 
+abstract Task \mbox{\hyperlink{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_af25826940487d731ab9e6ecb4728cd15}{Dispose\+Async}} ()
+\begin{DoxyCompactList}\small\item\em Asynchronously shutdowns sandbox and performs cleanup \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_a99fca8bb117c968b198b37a39aee2727}\label{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_a99fca8bb117c968b198b37a39aee2727}} 
+virtual int {\bfseries Memory\+Limit} = 100$\ast$1024\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Sandboxed app memory limit (in KB) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_a5fb1a7638097fc1d951ab2b816b7be78}\label{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_a5fb1a7638097fc1d951ab2b816b7be78}} 
+virtual int {\bfseries Time\+Limit} = 30\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Sandboxed app execution time limit in seconds \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_a3163e8a30a8a6caa0a65c17f12269f6c}\label{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_a3163e8a30a8a6caa0a65c17f12269f6c}} 
+virtual int {\bfseries Disk\+Limit} = 1024\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Limits the disk space usage for sandboxed app (in KB) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_ad8a3db1ed006b0d8f617b45a2427afa1}\label{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_ad8a3db1ed006b0d8f617b45a2427afa1}} 
+abstract ? string {\bfseries Sand\+Box\+Working\+Directory}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Sandbox files directory \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_a897f66f5a384cbc8cea84ccac4969037}\label{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_a897f66f5a384cbc8cea84ccac4969037}} 
+abstract string {\bfseries Output}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Output of app, executed in sandbox \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_a8830d07d5b8372d021df2f7527fe6069}\label{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_a8830d07d5b8372d021df2f7527fe6069}} 
+\index{OnlineCompiler.Server.SandBox.SandBox@{OnlineCompiler.Server.SandBox.SandBox}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!OnlineCompiler.Server.SandBox.SandBox@{OnlineCompiler.Server.SandBox.SandBox}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily abstract void Online\+Compiler.\+Server.\+Sand\+Box.\+Sand\+Box.\+Dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Shutdowns sandbox and performs cleanup 
+
+
+
+Implemented in \mbox{\hyperlink{class_online_compiler_1_1_server_1_1_sand_box_1_1_isolate_sandbox_a1f2846ac1e549b43e827c69ffd6c9adc}{Online\+Compiler.\+Server.\+Sand\+Box.\+Isolate\+Sandbox}}.
+
+\mbox{\Hypertarget{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_af25826940487d731ab9e6ecb4728cd15}\label{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_af25826940487d731ab9e6ecb4728cd15}} 
+\index{OnlineCompiler.Server.SandBox.SandBox@{OnlineCompiler.Server.SandBox.SandBox}!DisposeAsync@{DisposeAsync}}
+\index{DisposeAsync@{DisposeAsync}!OnlineCompiler.Server.SandBox.SandBox@{OnlineCompiler.Server.SandBox.SandBox}}
+\doxysubsubsection{\texorpdfstring{DisposeAsync()}{DisposeAsync()}}
+{\footnotesize\ttfamily abstract Task Online\+Compiler.\+Server.\+Sand\+Box.\+Sand\+Box.\+Dispose\+Async (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Asynchronously shutdowns sandbox and performs cleanup 
+
+
+
+Implemented in \mbox{\hyperlink{class_online_compiler_1_1_server_1_1_sand_box_1_1_isolate_sandbox_aa802a17cc369b32e0881cba1be46bace}{Online\+Compiler.\+Server.\+Sand\+Box.\+Isolate\+Sandbox}}.
+
+\mbox{\Hypertarget{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_af87c4a2223fc5f73618501ad5599db91}\label{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_af87c4a2223fc5f73618501ad5599db91}} 
+\index{OnlineCompiler.Server.SandBox.SandBox@{OnlineCompiler.Server.SandBox.SandBox}!ExecuteCommandInSandbox@{ExecuteCommandInSandbox}}
+\index{ExecuteCommandInSandbox@{ExecuteCommandInSandbox}!OnlineCompiler.Server.SandBox.SandBox@{OnlineCompiler.Server.SandBox.SandBox}}
+\doxysubsubsection{\texorpdfstring{ExecuteCommandInSandbox()}{ExecuteCommandInSandbox()}}
+{\footnotesize\ttfamily abstract int Online\+Compiler.\+Server.\+Sand\+Box.\+Sand\+Box.\+Execute\+Command\+In\+Sandbox (\begin{DoxyParamCaption}\item[{string}]{command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Executes command in sandbox 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & Command\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Exit code
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_online_compiler_1_1_server_1_1_sand_box_1_1_isolate_sandbox_a54d92cb18e972df4d84c22e2f24aa7cd}{Online\+Compiler.\+Server.\+Sand\+Box.\+Isolate\+Sandbox}}.
+
+\mbox{\Hypertarget{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_acb7eaaff1bcc6991301e920bbfb561b4}\label{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_acb7eaaff1bcc6991301e920bbfb561b4}} 
+\index{OnlineCompiler.Server.SandBox.SandBox@{OnlineCompiler.Server.SandBox.SandBox}!ExecuteCommandInSandboxAsync@{ExecuteCommandInSandboxAsync}}
+\index{ExecuteCommandInSandboxAsync@{ExecuteCommandInSandboxAsync}!OnlineCompiler.Server.SandBox.SandBox@{OnlineCompiler.Server.SandBox.SandBox}}
+\doxysubsubsection{\texorpdfstring{ExecuteCommandInSandboxAsync()}{ExecuteCommandInSandboxAsync()}}
+{\footnotesize\ttfamily abstract Task$<$ int $>$ Online\+Compiler.\+Server.\+Sand\+Box.\+Sand\+Box.\+Execute\+Command\+In\+Sandbox\+Async (\begin{DoxyParamCaption}\item[{string}]{command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Asynchronously executes command in sandbox 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & Command\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Exit code
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_online_compiler_1_1_server_1_1_sand_box_1_1_isolate_sandbox_a259b6cf2a231a8053448aa1968d15f64}{Online\+Compiler.\+Server.\+Sand\+Box.\+Isolate\+Sandbox}}.
+
+\mbox{\Hypertarget{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_a5c5c28f6bcbdb55a2155a72255b2fcfc}\label{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_a5c5c28f6bcbdb55a2155a72255b2fcfc}} 
+\index{OnlineCompiler.Server.SandBox.SandBox@{OnlineCompiler.Server.SandBox.SandBox}!InitializeSandBox@{InitializeSandBox}}
+\index{InitializeSandBox@{InitializeSandBox}!OnlineCompiler.Server.SandBox.SandBox@{OnlineCompiler.Server.SandBox.SandBox}}
+\doxysubsubsection{\texorpdfstring{InitializeSandBox()}{InitializeSandBox()}}
+{\footnotesize\ttfamily abstract void Online\+Compiler.\+Server.\+Sand\+Box.\+Sand\+Box.\+Initialize\+Sand\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Initializes main components and starts the sandbox 
+
+
+
+Implemented in \mbox{\hyperlink{class_online_compiler_1_1_server_1_1_sand_box_1_1_isolate_sandbox_a9c0705da3112eb7cff84995bc000c58d}{Online\+Compiler.\+Server.\+Sand\+Box.\+Isolate\+Sandbox}}.
+
+\mbox{\Hypertarget{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_a4e2640dffb7d6098dd54cd1ce5830fbe}\label{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_a4e2640dffb7d6098dd54cd1ce5830fbe}} 
+\index{OnlineCompiler.Server.SandBox.SandBox@{OnlineCompiler.Server.SandBox.SandBox}!InitializeSandBoxAsync@{InitializeSandBoxAsync}}
+\index{InitializeSandBoxAsync@{InitializeSandBoxAsync}!OnlineCompiler.Server.SandBox.SandBox@{OnlineCompiler.Server.SandBox.SandBox}}
+\doxysubsubsection{\texorpdfstring{InitializeSandBoxAsync()}{InitializeSandBoxAsync()}}
+{\footnotesize\ttfamily abstract Task Online\+Compiler.\+Server.\+Sand\+Box.\+Sand\+Box.\+Initialize\+Sand\+Box\+Async (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Asynchronously initializes main components and starts the sandbox 
+
+
+
+Implemented in \mbox{\hyperlink{class_online_compiler_1_1_server_1_1_sand_box_1_1_isolate_sandbox_aa749e3269811f5fd9e0be9efb14ca743}{Online\+Compiler.\+Server.\+Sand\+Box.\+Isolate\+Sandbox}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Server/\+Sand\+Box/Sand\+Box.\+cs\end{DoxyCompactItemize}

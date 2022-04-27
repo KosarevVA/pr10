@@ -1,0 +1,148 @@
+\hypertarget{class_online_compiler_1_1_server_1_1_sand_box_1_1_isolate_sandbox}{}\doxysection{Online\+Compiler.\+Server.\+Sand\+Box.\+Isolate\+Sandbox Class Reference}
+\label{class_online_compiler_1_1_server_1_1_sand_box_1_1_isolate_sandbox}\index{OnlineCompiler.Server.SandBox.IsolateSandbox@{OnlineCompiler.Server.SandBox.IsolateSandbox}}
+
+
+Sandbox based on isolate \href{https://github.com/ioi/isolate}{\texttt{ https\+://github.\+com/ioi/isolate}}  
+
+
+Inheritance diagram for Online\+Compiler.\+Server.\+Sand\+Box.\+Isolate\+Sandbox\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_online_compiler_1_1_server_1_1_sand_box_1_1_isolate_sandbox}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_online_compiler_1_1_server_1_1_sand_box_1_1_isolate_sandbox_a9c0705da3112eb7cff84995bc000c58d}{Initialize\+Sand\+Box}} ()
+\begin{DoxyCompactList}\small\item\em Initializes main components and starts the sandbox \end{DoxyCompactList}\item 
+override async Task \mbox{\hyperlink{class_online_compiler_1_1_server_1_1_sand_box_1_1_isolate_sandbox_aa749e3269811f5fd9e0be9efb14ca743}{Initialize\+Sand\+Box\+Async}} ()
+\begin{DoxyCompactList}\small\item\em Asynchronously initializes main components and starts the sandbox \end{DoxyCompactList}\item 
+override int \mbox{\hyperlink{class_online_compiler_1_1_server_1_1_sand_box_1_1_isolate_sandbox_a54d92cb18e972df4d84c22e2f24aa7cd}{Execute\+Command\+In\+Sandbox}} (string command)
+\begin{DoxyCompactList}\small\item\em Executes command in sandbox \end{DoxyCompactList}\item 
+override async Task$<$ int $>$ \mbox{\hyperlink{class_online_compiler_1_1_server_1_1_sand_box_1_1_isolate_sandbox_a259b6cf2a231a8053448aa1968d15f64}{Execute\+Command\+In\+Sandbox\+Async}} (string command)
+\begin{DoxyCompactList}\small\item\em Asynchronously executes command in sandbox \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_online_compiler_1_1_server_1_1_sand_box_1_1_isolate_sandbox_a1f2846ac1e549b43e827c69ffd6c9adc}{Dispose}} ()
+\begin{DoxyCompactList}\small\item\em Shutdowns sandbox and performs cleanup \end{DoxyCompactList}\item 
+override async Task \mbox{\hyperlink{class_online_compiler_1_1_server_1_1_sand_box_1_1_isolate_sandbox_aa802a17cc369b32e0881cba1be46bace}{Dispose\+Async}} ()
+\begin{DoxyCompactList}\small\item\em Asynchronously shutdowns sandbox and performs cleanup \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_online_compiler_1_1_server_1_1_sand_box_1_1_isolate_sandbox_a39db66956f21a4cac7291b2bbaa0da4e}\label{class_online_compiler_1_1_server_1_1_sand_box_1_1_isolate_sandbox_a39db66956f21a4cac7291b2bbaa0da4e}} 
+override string {\bfseries Output}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_online_compiler_1_1_server_1_1_sand_box_1_1_isolate_sandbox_abd1172f4933679a384c5e6a5f2725c13}\label{class_online_compiler_1_1_server_1_1_sand_box_1_1_isolate_sandbox_abd1172f4933679a384c5e6a5f2725c13}} 
+override? string {\bfseries Sand\+Box\+Working\+Directory}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Sandbox based on isolate \href{https://github.com/ioi/isolate}{\texttt{ https\+://github.\+com/ioi/isolate}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_online_compiler_1_1_server_1_1_sand_box_1_1_isolate_sandbox_a1f2846ac1e549b43e827c69ffd6c9adc}\label{class_online_compiler_1_1_server_1_1_sand_box_1_1_isolate_sandbox_a1f2846ac1e549b43e827c69ffd6c9adc}} 
+\index{OnlineCompiler.Server.SandBox.IsolateSandbox@{OnlineCompiler.Server.SandBox.IsolateSandbox}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!OnlineCompiler.Server.SandBox.IsolateSandbox@{OnlineCompiler.Server.SandBox.IsolateSandbox}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void Online\+Compiler.\+Server.\+Sand\+Box.\+Isolate\+Sandbox.\+Dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Shutdowns sandbox and performs cleanup 
+
+
+
+Implements \mbox{\hyperlink{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_a8830d07d5b8372d021df2f7527fe6069}{Online\+Compiler.\+Server.\+Sand\+Box.\+Sand\+Box}}.
+
+\mbox{\Hypertarget{class_online_compiler_1_1_server_1_1_sand_box_1_1_isolate_sandbox_aa802a17cc369b32e0881cba1be46bace}\label{class_online_compiler_1_1_server_1_1_sand_box_1_1_isolate_sandbox_aa802a17cc369b32e0881cba1be46bace}} 
+\index{OnlineCompiler.Server.SandBox.IsolateSandbox@{OnlineCompiler.Server.SandBox.IsolateSandbox}!DisposeAsync@{DisposeAsync}}
+\index{DisposeAsync@{DisposeAsync}!OnlineCompiler.Server.SandBox.IsolateSandbox@{OnlineCompiler.Server.SandBox.IsolateSandbox}}
+\doxysubsubsection{\texorpdfstring{DisposeAsync()}{DisposeAsync()}}
+{\footnotesize\ttfamily override async Task Online\+Compiler.\+Server.\+Sand\+Box.\+Isolate\+Sandbox.\+Dispose\+Async (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Asynchronously shutdowns sandbox and performs cleanup 
+
+
+
+Implements \mbox{\hyperlink{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_af25826940487d731ab9e6ecb4728cd15}{Online\+Compiler.\+Server.\+Sand\+Box.\+Sand\+Box}}.
+
+\mbox{\Hypertarget{class_online_compiler_1_1_server_1_1_sand_box_1_1_isolate_sandbox_a54d92cb18e972df4d84c22e2f24aa7cd}\label{class_online_compiler_1_1_server_1_1_sand_box_1_1_isolate_sandbox_a54d92cb18e972df4d84c22e2f24aa7cd}} 
+\index{OnlineCompiler.Server.SandBox.IsolateSandbox@{OnlineCompiler.Server.SandBox.IsolateSandbox}!ExecuteCommandInSandbox@{ExecuteCommandInSandbox}}
+\index{ExecuteCommandInSandbox@{ExecuteCommandInSandbox}!OnlineCompiler.Server.SandBox.IsolateSandbox@{OnlineCompiler.Server.SandBox.IsolateSandbox}}
+\doxysubsubsection{\texorpdfstring{ExecuteCommandInSandbox()}{ExecuteCommandInSandbox()}}
+{\footnotesize\ttfamily override int Online\+Compiler.\+Server.\+Sand\+Box.\+Isolate\+Sandbox.\+Execute\+Command\+In\+Sandbox (\begin{DoxyParamCaption}\item[{string}]{command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Executes command in sandbox 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & Command\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Exit code
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_af87c4a2223fc5f73618501ad5599db91}{Online\+Compiler.\+Server.\+Sand\+Box.\+Sand\+Box}}.
+
+\mbox{\Hypertarget{class_online_compiler_1_1_server_1_1_sand_box_1_1_isolate_sandbox_a259b6cf2a231a8053448aa1968d15f64}\label{class_online_compiler_1_1_server_1_1_sand_box_1_1_isolate_sandbox_a259b6cf2a231a8053448aa1968d15f64}} 
+\index{OnlineCompiler.Server.SandBox.IsolateSandbox@{OnlineCompiler.Server.SandBox.IsolateSandbox}!ExecuteCommandInSandboxAsync@{ExecuteCommandInSandboxAsync}}
+\index{ExecuteCommandInSandboxAsync@{ExecuteCommandInSandboxAsync}!OnlineCompiler.Server.SandBox.IsolateSandbox@{OnlineCompiler.Server.SandBox.IsolateSandbox}}
+\doxysubsubsection{\texorpdfstring{ExecuteCommandInSandboxAsync()}{ExecuteCommandInSandboxAsync()}}
+{\footnotesize\ttfamily override async Task$<$ int $>$ Online\+Compiler.\+Server.\+Sand\+Box.\+Isolate\+Sandbox.\+Execute\+Command\+In\+Sandbox\+Async (\begin{DoxyParamCaption}\item[{string}]{command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Asynchronously executes command in sandbox 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & Command\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Exit code
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_acb7eaaff1bcc6991301e920bbfb561b4}{Online\+Compiler.\+Server.\+Sand\+Box.\+Sand\+Box}}.
+
+\mbox{\Hypertarget{class_online_compiler_1_1_server_1_1_sand_box_1_1_isolate_sandbox_a9c0705da3112eb7cff84995bc000c58d}\label{class_online_compiler_1_1_server_1_1_sand_box_1_1_isolate_sandbox_a9c0705da3112eb7cff84995bc000c58d}} 
+\index{OnlineCompiler.Server.SandBox.IsolateSandbox@{OnlineCompiler.Server.SandBox.IsolateSandbox}!InitializeSandBox@{InitializeSandBox}}
+\index{InitializeSandBox@{InitializeSandBox}!OnlineCompiler.Server.SandBox.IsolateSandbox@{OnlineCompiler.Server.SandBox.IsolateSandbox}}
+\doxysubsubsection{\texorpdfstring{InitializeSandBox()}{InitializeSandBox()}}
+{\footnotesize\ttfamily override void Online\+Compiler.\+Server.\+Sand\+Box.\+Isolate\+Sandbox.\+Initialize\+Sand\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Initializes main components and starts the sandbox 
+
+
+
+Implements \mbox{\hyperlink{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_a5c5c28f6bcbdb55a2155a72255b2fcfc}{Online\+Compiler.\+Server.\+Sand\+Box.\+Sand\+Box}}.
+
+\mbox{\Hypertarget{class_online_compiler_1_1_server_1_1_sand_box_1_1_isolate_sandbox_aa749e3269811f5fd9e0be9efb14ca743}\label{class_online_compiler_1_1_server_1_1_sand_box_1_1_isolate_sandbox_aa749e3269811f5fd9e0be9efb14ca743}} 
+\index{OnlineCompiler.Server.SandBox.IsolateSandbox@{OnlineCompiler.Server.SandBox.IsolateSandbox}!InitializeSandBoxAsync@{InitializeSandBoxAsync}}
+\index{InitializeSandBoxAsync@{InitializeSandBoxAsync}!OnlineCompiler.Server.SandBox.IsolateSandbox@{OnlineCompiler.Server.SandBox.IsolateSandbox}}
+\doxysubsubsection{\texorpdfstring{InitializeSandBoxAsync()}{InitializeSandBoxAsync()}}
+{\footnotesize\ttfamily override async Task Online\+Compiler.\+Server.\+Sand\+Box.\+Isolate\+Sandbox.\+Initialize\+Sand\+Box\+Async (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Asynchronously initializes main components and starts the sandbox 
+
+
+
+Implements \mbox{\hyperlink{class_online_compiler_1_1_server_1_1_sand_box_1_1_sand_box_a4e2640dffb7d6098dd54cd1ce5830fbe}{Online\+Compiler.\+Server.\+Sand\+Box.\+Sand\+Box}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Server/\+Sand\+Box/Isolate\+Sandbox.\+cs\end{DoxyCompactItemize}

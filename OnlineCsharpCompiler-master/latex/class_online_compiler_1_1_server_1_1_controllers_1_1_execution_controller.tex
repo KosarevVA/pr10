@@ -1,0 +1,62 @@
+\hypertarget{class_online_compiler_1_1_server_1_1_controllers_1_1_execution_controller}{}\doxysection{Online\+Compiler.\+Server.\+Controllers.\+Execution\+Controller Class Reference}
+\label{class_online_compiler_1_1_server_1_1_controllers_1_1_execution_controller}\index{OnlineCompiler.Server.Controllers.ExecutionController@{OnlineCompiler.Server.Controllers.ExecutionController}}
+Inheritance diagram for Online\+Compiler.\+Server.\+Controllers.\+Execution\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_online_compiler_1_1_server_1_1_controllers_1_1_execution_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_online_compiler_1_1_server_1_1_controllers_1_1_execution_controller_a2161e9106614c49c2d699d78e83b3f7a}\label{class_online_compiler_1_1_server_1_1_controllers_1_1_execution_controller_a2161e9106614c49c2d699d78e83b3f7a}} 
+{\bfseries Execution\+Controller} (ILogger$<$ \mbox{\hyperlink{class_online_compiler_1_1_server_1_1_controllers_1_1_execution_controller}{Execution\+Controller}} $>$ logger)
+\item 
+string \mbox{\hyperlink{class_online_compiler_1_1_server_1_1_controllers_1_1_execution_controller_a2ea1fb0753e93663b9ba0410c2a5c788}{Post}} (\mbox{[}From\+Body\mbox{]}string? code)
+\begin{DoxyCompactList}\small\item\em Request for compiling and executing code \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_online_compiler_1_1_shared_1_1_execution_info}{Execution\+Info}}? \mbox{\hyperlink{class_online_compiler_1_1_server_1_1_controllers_1_1_execution_controller_a2939aae7c5fb54f9922dc8c91786060f}{Get}} (string id)
+\begin{DoxyCompactList}\small\item\em Getting execution information by id \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_online_compiler_1_1_server_1_1_controllers_1_1_execution_controller_a2939aae7c5fb54f9922dc8c91786060f}\label{class_online_compiler_1_1_server_1_1_controllers_1_1_execution_controller_a2939aae7c5fb54f9922dc8c91786060f}} 
+\index{OnlineCompiler.Server.Controllers.ExecutionController@{OnlineCompiler.Server.Controllers.ExecutionController}!Get@{Get}}
+\index{Get@{Get}!OnlineCompiler.Server.Controllers.ExecutionController@{OnlineCompiler.Server.Controllers.ExecutionController}}
+\doxysubsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_online_compiler_1_1_shared_1_1_execution_info}{Execution\+Info}}? Online\+Compiler.\+Server.\+Controllers.\+Execution\+Controller.\+Get (\begin{DoxyParamCaption}\item[{string}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getting execution information by id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Execution Information
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_online_compiler_1_1_server_1_1_controllers_1_1_execution_controller_a2ea1fb0753e93663b9ba0410c2a5c788}\label{class_online_compiler_1_1_server_1_1_controllers_1_1_execution_controller_a2ea1fb0753e93663b9ba0410c2a5c788}} 
+\index{OnlineCompiler.Server.Controllers.ExecutionController@{OnlineCompiler.Server.Controllers.ExecutionController}!Post@{Post}}
+\index{Post@{Post}!OnlineCompiler.Server.Controllers.ExecutionController@{OnlineCompiler.Server.Controllers.ExecutionController}}
+\doxysubsubsection{\texorpdfstring{Post()}{Post()}}
+{\footnotesize\ttfamily string Online\+Compiler.\+Server.\+Controllers.\+Execution\+Controller.\+Post (\begin{DoxyParamCaption}\item[{\mbox{[}\+From\+Body\mbox{]} string?}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Request for compiling and executing code 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & C\# code\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Unique id of the operation
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Server/\+Controllers/Execution\+Controller.\+cs\end{DoxyCompactItemize}
